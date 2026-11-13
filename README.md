@@ -11,26 +11,29 @@ Le site est fait de pages HTML simples, sans outil ni abonnement :
 | `articles.html` | Mes articles |
 | `projets.html` | Projets transversaux |
 | `css/style.css` | Couleurs, polices et mise en page |
+| `en/`, `it/` | Les mêmes pages en anglais et en italien |
+| `cv/` | CV en PDF (FR, EN, IT) : pour mettre à jour un CV, remplace le fichier en gardant le même nom |
+| `outils/traduire.py` | Fabrique `en/` et `it/` à partir des pages françaises |
 
 ## Ajouter les images
 
 Dépose chaque image dans le bon dossier **avec exactement ce nom**. Tant qu'une image manque, elle est simplement masquée : le texte s'affiche seul.
 
-Images encore manquantes :
-
-**`images/cartes/`**
-- `milan-danse-sur-glace.jpg`
-- `parcours-professionnel.jpg`
-- `of-vacances-stations-balneaires.jpg`
-- `of-liberte-250.jpg`
-- `of-rennes-bars-restos.jpg`
-- `of-mexique-el-mencho.jpg`
-- `of-inondations-maine-et-loire.jpg`
-
-**`images/projets/`**
-- `temoignage-thotis.jpg` (miniature de la vidéo)
+Aucune image ne manque pour l'instant.
 
 Conseil : exporte les cartes en JPG d'environ 2000 px de large. Elles restent nettes et le site se charge vite.
+
+## Site trilingue (FR, EN, IT)
+
+Les pages françaises sont la référence. Les versions anglaise (`en/`) et italienne (`it/`) sont fabriquées par `outils/traduire.py`, qui contient toutes les traductions et les CV dans chaque langue.
+
+Après avoir modifié une page française, lance dans le terminal, depuis le dossier du site :
+
+```
+python3 outils/traduire.py
+```
+
+Si un texte français a changé, le script s'arrête et indique la phrase qu'il ne trouve plus : mets à jour la ligne correspondante (français, anglais, italien) dans `outils/traduire.py`, puis relance-le. Ne modifie pas directement les fichiers de `en/` et `it/` : ils seraient écrasés.
 
 ## Modifier le site avec VS Code
 
@@ -45,4 +48,4 @@ Ouvre la page sur GitHub, clique sur le crayon (*Edit this file*), modifie le te
 
 ## Polices
 
-EB Garamond, sous licence SIL Open Font License (voir `fonts/OFL.txt`).
+EB Garamond (texte courant) et Averia Serif Libre (titres, logo, menu, rubriques), toutes deux sous licence SIL Open Font License (voir `fonts/OFL.txt`).
