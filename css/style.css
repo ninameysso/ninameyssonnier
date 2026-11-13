@@ -282,6 +282,27 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .carrousel button:focus-visible, .carrousel-piste:focus-visible { outline: 3px solid var(--or); outline-offset: 3px; }
 .carrousel.seule .carrousel-commandes { display: none; }
 
+/* Plein écran au clic sur une carte : contour vert en transparence */
+.fiche.carte figure.cadre img { cursor: zoom-in; }
+.fiche.carte figure.cadre img:focus-visible { outline: 3px solid var(--or); outline-offset: 3px; }
+.plein-ecran {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; justify-content: center; align-items: center;
+  padding: clamp(.75rem, 3vw, 2rem);
+  background: rgba(36, 86, 20, .85);   /* var(--vert) en transparence */
+  cursor: zoom-out;
+}
+.plein-ecran[hidden] { display: none; }
+.plein-ecran img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; box-shadow: 0 6px 30px rgba(0, 0, 0, .35); }
+.plein-ecran-fermer {
+  position: absolute; top: .6rem; right: .8rem;
+  width: 2.4rem; height: 2.4rem; border: 0; border-radius: 50%;
+  background: #fff; color: var(--vert); font-size: 1.7rem; line-height: 1; cursor: pointer;
+}
+.plein-ecran-fermer:hover { background: var(--or); color: #fff; }
+.plein-ecran-fermer:focus-visible { outline: 3px solid var(--or); outline-offset: 3px; }
+html.sans-defilement { overflow: hidden; }
+
 /* Image pas encore ajoutée : le cadre disparaît, le texte reste */
 figure.manquante { display: none; }
 
@@ -363,6 +384,9 @@ figure.manquante { display: none; }
   .tuiles svg { width: 44px; height: 26px; }
   .pied-grille { grid-template-columns: 1fr; text-align: center; }
   .pied-globe { justify-self: center; }
+  /* Pied de page : infos de contact plus petites */
+  .contact h2 { font-size: 1.1rem; letter-spacing: .15em; margin-bottom: .5rem; }
+  .contact ul { font-size: .92rem; gap: .2rem; }
   .accroche, .encart .etroit { text-align: left; }
   .bouton { font-size: 1rem; }
   .fiche.carte { padding: 1.5rem 0; }
