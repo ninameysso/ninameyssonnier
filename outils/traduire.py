@@ -339,8 +339,16 @@ def traduire(fr, lang, page):
         s = s[:a] + bloc_cv(CV[lang]) + s[b:]
     return ajouter_langues(s, lang, page)
 
+def versionner(s):
+    """Ajoute ?v=<empreinte> aux liens CSS/JS : les navigateurs rechargent dès qu'un fichier change."""
+    import hashlib
+    def remplacer(m):
+        empreinte = hashlib.md5(open(m.group(1), "rb").read()).hexdigest()[:8]
+        return m.group(1) + "?v=" + empreinte + '"'
+    return re.sub(r'((?:css|js)/[\w-]+\.(?:css|js))(?:\?v=\w+)?"', remplacer, s)
+
 for page in PAGES:
-    fr = open(page, encoding="utf-8").read()
+    fr = versionner(open(page, encoding="utf-8").read())
     fr_base = re.sub(r'\n<link rel="alternate" hreflang="[^"]+" href="[^"]+">', "", fr)
     fr_base = re.sub(r'\n<nav class="langues".*?</nav>', "", fr_base, flags=re.S)
     for lang in ("en", "it"):

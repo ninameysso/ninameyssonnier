@@ -35,6 +35,8 @@ python3 outils/traduire.py
 
 Si un texte français a changé, le script s'arrête et indique la phrase qu'il ne trouve plus : mets à jour la ligne correspondante (français, anglais, italien) dans `outils/traduire.py`, puis relance-le. Ne modifie pas directement les fichiers de `en/` et `it/` : ils seraient écrasés.
 
+Le script ajoute aussi un numéro de version aux liens vers `css/style.css` et les fichiers `js/` : lance-le après chaque modification du style, pour que les visiteurs voient tout de suite la nouvelle mise en page au lieu d'une ancienne version gardée en mémoire par leur navigateur.
+
 ## Modifier le site avec VS Code
 
 1. Clone le dépôt (VS Code : *Cloner le dépôt Git*, ou GitHub Desktop).
