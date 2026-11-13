@@ -292,7 +292,6 @@ figure.manquante { display: none; }
 .article { padding: 2.25rem 0; border-bottom: 1.5px solid var(--encre); text-align: center; }
 .article:last-of-type { border-bottom: 0; }
 .article > .conteneur { max-width: 820px; }
-.article .logo-media { display: block; width: auto; height: 30px; margin: 0 auto .9rem; }
 .article h2 { font-size: clamp(1.25rem, 1.9vw, 1.6rem); margin-bottom: .5rem; }
 .article .support { font-size: 1.02rem; margin: 0; }
 .article .date { font-size: 1.02rem; font-style: italic; color: var(--gris); margin: .2rem 0 0; }
