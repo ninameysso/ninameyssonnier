@@ -387,6 +387,16 @@ figure.manquante { display: none; }
   /* Pied de page : infos de contact plus petites */
   .contact h2 { font-size: 1.1rem; letter-spacing: .15em; margin-bottom: .5rem; }
   .contact ul { font-size: .92rem; gap: .2rem; }
+  /* À propos : infos du CV (expériences, éducation, compétences) plus petites */
+  .parcours { padding: 2rem 1.25rem 2.5rem; }
+  .parcours h3.rubrique { font-size: 1.3rem; margin-bottom: 1.1rem; }
+  .parcours h3.rubrique:not(:first-child) { margin-top: 2.5rem; }
+  .poste { margin-bottom: 1.4rem; }
+  .poste h4 { font-size: 1.05rem; }
+  .poste .quand { font-size: .88rem; margin-bottom: .3rem; }
+  .poste p { font-size: .97rem; line-height: 1.45; }
+  .competences h3 { font-size: 1.1rem; margin-bottom: .6rem; }
+  .competences ul { font-size: .97rem; }
   .accroche, .encart .etroit { text-align: left; }
   .bouton { font-size: 1rem; }
   .fiche.carte { padding: 1.5rem 0; }
