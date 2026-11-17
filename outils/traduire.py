@@ -25,7 +25,7 @@ CV = {
   ],
   formations=[
     ("Master’s degree in Geopolitics at the French Institute of Geopolitics", "September 2024 - September 2026", ["Awarded a <strong>Master’s 2</strong> degree through a work-study programme with first-class honours (19/20).", "Awarded a <strong>Master’s 1</strong> degree with first-class honours (16/20), following the completion of a research dissertation on the return of the Chagos Archipelago."]),
-    ("Bachelor’s degree in geography after 3 years of preparatory classes in literature", "September 2021 - July 2024 - Lyon, France", ["Attended the A/L preparatory classes (hypokhâgne, khâgne, khûbe), specialising in history and geography.", "Achieved the minimum entry requirements for the École normale supérieure de Lyon.", "Represented pupils as class representative."]),
+    ("Bachelor’s degree in geography after 3 years of preparatory classes in literature", "September 2021 - June 2024 - Lyon, France", ["Attended the A/L preparatory classes (hypokhâgne, khâgne, khûbe), specialising in history and geography.", "Achieved the minimum entry requirements for the École normale supérieure de Lyon.", "Represented pupils as class representative."]),
   ],
   logiciels=["Adobe Illustrator", "Datawrapper", "Flourish", "QGIS", "Office suite"],
   langues=["English - professional skills", "French - native language", "Italian - professional skills"],
@@ -42,7 +42,7 @@ CV = {
   ],
   formations=[
     ("Master in Geopolitica presso l’Istituto Francese di Geopolitica", "Settembre 2024 - settembre 2026", ["Conseguimento del <strong>Master 2</strong> in alternanza scuola-lavoro con lode (19/20).", "Conseguimento del <strong>Master 1</strong> con lode (16/20), dopo aver redatto una tesi di ricerca sulla restituzione dell’arcipelago delle Chagos."]),
-    ("Laurea in geografia dopo 3 anni di corsi preparatori per le Grandes Écoles (indirizzo letterario)", "Settembre 2021 - luglio 2024 - Lione, Francia", ["Accompagnamento degli studenti dei corsi preparatori A/L (hypokhâgne, khâgne, khûbe), indirizzo storia-geografia.", "Ammissione condizionata all’École normale supérieure di Lione.", "Rappresentanza degli studenti in qualità di delegata di classe."]),
+    ("Laurea in geografia dopo 3 anni di corsi preparatori per le Grandes Écoles (indirizzo letterario)", "Settembre 2021 - giugno 2024 - Lione, Francia", ["Accompagnamento degli studenti dei corsi preparatori A/L (hypokhâgne, khâgne, khûbe), indirizzo storia-geografia.", "Ammissione condizionata all’École normale supérieure di Lione.", "Rappresentanza degli studenti in qualità di delegata di classe."]),
   ],
   logiciels=["Adobe Illustrator", "Datawrapper", "Flourish", "QGIS", "Pacchetto Office"],
   langues=["Inglese - competenze professionali", "Francese - madrelingua", "Italiano - competenze professionali"],
